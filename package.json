@@ -1,0 +1,20 @@
+{
+  "name": "manish-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio site with Rixie, an AI assistant served by a Vercel function in api/chat.js",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.12.0",
+    "nodemailer": "^10.6.1",
+    "openai": "^7.62.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server.js",
+    "reset-limits": "node --env-file-if-exists=.env scripts/reset-limits.mjs",
+    "deploy": "npx vercel@latest --prod",
+    "env:push": "node --env-file-if-exists=.env scripts/push-env.mjs"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

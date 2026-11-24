@@ -1,0 +1,14 @@
+# never upload secrets
+.env
+.env.*
+# local-only tooling and old drafts
+node_modules
+server.js
+scripts
+old_version
+old_version_2
+old_version_3
+old_version_4
+images/favicon_io.zip
+*.md
+.DS_Store

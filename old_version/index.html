@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manish Bhargava | Portfolio</title>
+    <meta name="description"
+        content="Manish Bhargava — Full Stack AI Developer & Cloud-Native Engineer. MERN, Next.js, FastAPI, RAG, LangChain, LangGraph, AWS." />
+    <meta name="author" content="Manish Bhargava" />
+    <meta property="og:title" content="Manish Bhargava | Portfolio" />
+    <meta property="og:description" content="Full Stack AI Developer & Cloud-Native Engineer. SIH 2025 National Finalist." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='32' fill='%23111'/><text x='50%' y='56%' text-anchor='middle' dominant-baseline='middle' font-family='Georgia' font-weight='700' font-size='28' fill='%23FC626A'>MB</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..800,100&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <a href="#page1" class="brand">Manish Bhargava</a>
+        <a href="#page2" class="nav-arrow" aria-label="Scroll down">
+            <svg viewBox="0 0 62 62" aria-hidden="true">
+                <circle cx="31" cy="31" r="30" fill="none" stroke="#fff" stroke-width="1" />
+                <path d="M20 31h22M34 23l8 8-8 8" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a class="resume-btn" href="./manish_bhargava_resume.pdf" target="_blank" rel="noopener noreferrer" download>
+            <span class="long">get my resume offline</span><span class="short">get resume</span>
+        </a>
+    </nav>
+
+    <main>
+        <!-- ===== PAGE 1 : hero ===== -->
+        <section id="page1">
+            <h1>Who the hell is</h1>
+            <div id="image-div">
+                <!--
+                  Want your photo here instead? Save it as images/manish.png
+                  (transparent PNG works best) and it will replace the card.
+                -->
+                <img class="hero-photo" src="./images/manish.png" alt="Manish Bhargava"
+                    onerror="this.remove()" />
+                <div class="hero-card" aria-hidden="true">
+                    <span class="blob b1"></span>
+                    <span class="blob b2"></span>
+                    <div class="mono">MB</div>
+                    <div class="code">
+                        <p><i>const</i> manish = {</p>
+                        <p>&nbsp;&nbsp;role: <b>"Full Stack AI Engineer"</b>,</p>
+                        <p>&nbsp;&nbsp;stack: [<b>"MERN"</b>, <b>"Next.js"</b>, <b>"FastAPI"</b>],</p>
+                        <p>&nbsp;&nbsp;ai: [<b>"RAG"</b>, <b>"LangGraph"</b>, <b>"MCP"</b>],</p>
+                        <p>&nbsp;&nbsp;cloud: <b>"AWS"</b>,</p>
+                        <p>};</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PAGE 2 : name marquee + intro ===== -->
+        <section id="page2">
+            <div id="name-div">
+                <h1>Manish Bhargava ?</h1>
+                <h1>Manish Bhargava ?</h1>
+                <h1>Manish Bhargava ?</h1>
+            </div>
+            <div id="intro-div">
+                <h1>Hi!</h1>
+                <h1>I’m Manish, a <span class="a">Full Stack AI Developer</span> and <span class="a">Cloud-Native
+                        Engineer</span> building scalable web applications and AI-powered solutions.</h1>
+                <h1>I build with <span class="a">MERN, Next.js &amp; FastAPI</span>, and ship AI with <span
+                        class="b">RAG, LangChain, LangGraph</span> and <span class="b">MCP servers</span>.</h1>
+                <h1>I was a <span class="a">SIH 2025 National Finalist</span>, won <span class="b">2nd place</span> at the
+                    Next Gen Hackathon, and solved <span class="b">1000+ DSA problems</span> with a <span
+                        class="a">1800+ LeetCode</span> rating.</h1>
+
+                <div id="prof">
+                    <a class="pill coral" href="mailto:bhargavmanish908@gmail.com">say hi 👋</a>
+                    <a class="pill cyan" href="https://github.com/Manish-bhargava" target="_blank"
+                        rel="noopener noreferrer">my github ↗</a>
+                </div>
+
+                <div id="stats">
+                    <div><strong>1000+</strong><span>DSA solved</span></div>
+                    <div><strong>1800+</strong><span>LeetCode rating</span></div>
+                    <div><strong>4+</strong><span>internships</span></div>
+                    <div><strong>2</strong><span>national hackathons</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PAGE 3 : skills ===== -->
+        <section id="page3">
+            <h3>Things I'm <span>good</span> at</h3>
+            <h5>skills, stacks, and the tools I ship with</h5>
+            <div id="skill-boxes"></div>
+        </section>
+
+        <!-- ===== EXPERIENCE ===== -->
+        <section id="experience">
+            <h2>my career <span>&amp;</span> experience.</h2>
+            <h4>where I've built things that shipped</h4>
+            <div id="exp-list"></div>
+        </section>
+
+        <!-- ===== PAGE 4 : work grid ===== -->
+        <section id="page4">
+            <h2>crafted with <span>love</span>.</h2>
+            <h4>these are few of my recent works</h4>
+            <div id="work-sample"></div>
+            <a class="more-link" href="https://github.com/Manish-bhargava" target="_blank" rel="noopener noreferrer">see
+                all my work on github ↗</a>
+        </section>
+
+        <!-- ===== PAGE 6 : wins + writing list ===== -->
+        <section id="page6">
+            <h1>my <span>wins</span> &amp; writing.</h1>
+            <div id="artworks"></div>
+        </section>
+
+        <!-- ===== PAGE 5 : contact ===== -->
+        <section class="page5" id="contact">
+            <h1>you can get in touch <br />with me via
+                <span class="mail"><a href="mailto:bhargavmanish908@gmail.com">mail</a></span> or
+                <span class="github"><a href="https://github.com/Manish-bhargava" target="_blank"
+                        rel="noopener noreferrer">github</a></span> or
+                <span class="linkedin"><a href="https://linkedin.com/in/manish-bhargava-36093a2b7" target="_blank"
+                        rel="noopener noreferrer">linkedIn</a></span>.
+            </h1>
+            <footer>created with ❤️ by Manish Bhargava · <span id="year"></span></footer>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

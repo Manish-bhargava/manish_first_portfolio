@@ -1,0 +1,65 @@
+/* ---------- theme toggle + hand-tuned light-mode tweaks ---------- */
+.theme-toggle {
+  width: 40px; height: 40px; flex: none; display: grid; place-items: center; cursor: pointer;
+  border-radius: 12px; border: 1px solid #ffffff26; background: #ffffff0a; color: var(--ink);
+  transition: border-color .2s, color .2s, transform .3s;
+}
+.theme-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.theme-toggle:active { transform: rotate(20deg) scale(.95); }
+.theme-toggle svg { width: 17px; height: 17px; }
+.theme-toggle .i-sun { display: none; }
+[data-theme="light"] .theme-toggle { border-color: #00000024; background: #0000000a; }
+[data-theme="light"] .theme-toggle .i-sun { display: block; }
+[data-theme="light"] .theme-toggle .i-moon { display: none; }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after { transition: background-color .35s ease, color .35s ease, border-color .35s ease !important; }
+
+/* light mode: things a colour flip can't fix */
+:root[data-theme="light"] { color-scheme: light; }
+:root:not([data-theme="light"]) { color-scheme: dark; }
+[data-theme="light"] .hero-portrait img,
+[data-theme="light"] .story-portrait img { filter: grayscale(1) contrast(1.25) brightness(.8) sepia(.14); }
+[data-theme="light"] .hero-portrait-dots { mix-blend-mode: screen; opacity: .3; }
+[data-theme="light"] .hero h1 { text-shadow: none; }
+[data-theme="light"] .pc-cover img, [data-theme="light"] .pm-cover img { filter: none; }
+[data-theme="light"] .product-card { box-shadow: 0 1px 0 #ffffff inset, 0 10px 30px #3a2a1a10; }
+[data-theme="light"] .product-modal { box-shadow: 0 40px 120px #3a2a1a40; }
+[data-theme="light"] .route-bus svg rect[fill="#030303"], [data-theme="light"] .route-bus svg path { fill: #2a2520; }
+[data-theme="light"] ::selection { color: #fff; }
+[data-theme="light"] .rixie-msg.user, [data-theme="light"] .rixie-msg.user strong { color: #fff; }
+
+/* desktop: links + theme toggle grouped on the right */
+@media (min-width: 901px) {
+  .navigation .nav-links { margin-left: auto; margin-right: 18px; }
+}
+[data-theme="light"] .contact { background: radial-gradient(at 50% 60%, #ff8c5924, #f9f6f300 60%), var(--bg); }
+[data-theme="light"] .nav-contact { background: var(--ink); color: var(--bg); border-color: var(--ink); box-shadow: none; }
+[data-theme="light"] .nav-contact:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
+@media (max-width: 900px) {
+  [data-theme="light"] .nav-contact { background: none; color: var(--ink); border: none; border-top: 1px solid var(--line); }
+}
+/* white text on accent-filled controls (the light accent is deeper than the dark one) */
+[data-theme="light"] .signal-options button[aria-pressed="true"],
+[data-theme="light"] .product-filters button[aria-pressed="true"],
+[data-theme="light"] .pill-link:hover,
+[data-theme="light"] .pill-link:hover > .signal-text::after,
+[data-theme="light"] .pm-btn.primary,
+[data-theme="light"] .pm-btn.primary:hover,
+[data-theme="light"] .pc-open,
+[data-theme="light"] .rixie-form button,
+[data-theme="light"] .skip-link { color: #fff; }
+[data-theme="light"] .pm-btn.primary i { background: #fff; }
+
+/* section labels (bold) in light mode */
+[data-theme="light"] .section-label { color: #4a4540; }
+[data-theme="light"] .section-label > span:first-child { color: var(--blue); text-shadow: none; }
+
+/* product card live link (light mode) */
+[data-theme="light"] .pc-actions { border-top-color: #00000014; }
+[data-theme="light"] .pc-more { color: #3a3530; }
+[data-theme="light"] .pc-live { color: #fff; }
+[data-theme="light"] .pc-live i { background: #fff; }
+[data-theme="light"] .pc-live:hover { background: #e06a34; }
+[data-theme="light"] .pc-live.code { color: var(--ink); border-color: #00000030; }
+
+[data-theme="light"] .contact-copy.copied { color: #fff; }
