@@ -32,11 +32,6 @@
     setTheme(root.getAttribute("data-theme") || "dark", false);
     themeBtn.addEventListener("click", function () { setTheme(root.getAttribute("data-theme") === "light" ? "dark" : "light", true); });
   }
-  if (window.matchMedia) {
-    var mq = matchMedia("(prefers-color-scheme: light)");
-    var follow = function (e) { var saved; try { saved = localStorage.getItem("theme"); } catch (x) {} if (!saved) setTheme(e.matches ? "light" : "dark", false); };
-    if (mq.addEventListener) mq.addEventListener("change", follow);
-  }
 
   // ---- nav: scroll state, hide on scroll down, progress bar ----
   var nav = document.getElementById("nav");
